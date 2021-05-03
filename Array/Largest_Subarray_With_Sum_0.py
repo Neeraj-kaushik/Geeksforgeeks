@@ -6,7 +6,6 @@ def subarray(n,li):
         sum=li[i]
         for j in range(i+1,l):
             if sum==0:
-                print(i,j)
                 a=j-i
                 if a>max:
                     max=a
