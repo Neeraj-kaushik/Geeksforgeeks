@@ -1,16 +1,17 @@
 def encoding(st):
-    for i in range(len(st)-1):
+    i=0
+    while i<=len(st)-1:
         j=i
-        while st[i]!=st[j] and j<len(st):
-            if st[i]!=st[j]:
-                a=j-i
-            else:
+        count=1
+        while j<len(st)-1:
+            if st[i]==st[j+1]:
+                count+=1
                 j=j+1
-        print(st[i]+str(a),end='')
-        i=j            
+            else:
+                break
+        print(st[i]+str(count),end='')
+        i=j+1         
         
                             
-
-
 st=input()
 encoding(st)
