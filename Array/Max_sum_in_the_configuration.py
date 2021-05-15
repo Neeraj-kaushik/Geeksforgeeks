@@ -15,7 +15,6 @@ def max_sum(li,n):
         sum=0
         for k in range(len(li1)):
             sum=sum+(k*li1[k])
-        print(sum)
         if sum>max:
             max=sum
     print(max)
