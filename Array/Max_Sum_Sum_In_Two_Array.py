@@ -37,11 +37,6 @@ def max_sum_path(m,n,li,li1):
 
 
 
-
-    
-
-
-
 m=int(input())
 n=int(input())
 li=[int(x) for x in input().split()]
