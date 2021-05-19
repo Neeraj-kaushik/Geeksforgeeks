@@ -5,6 +5,7 @@ def stock_span(li):
         for j in range(0,i):
             if li[i]>li[j]:
                 count=count+1
+        
         li1.append(count)
     for i in range(len(li1)):
         print(li1[i],end=' ')
