@@ -11,6 +11,7 @@ def subarray_0_1(li):
                     count0+=1
             if count1==count0:
                 count+=1
+    
     print(count+1)
 
 
