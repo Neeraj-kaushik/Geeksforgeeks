@@ -3,13 +3,11 @@ def insert(li):
     for i in range(0,len(li)-2,2):
         if li[i]=='a':
             d.append(li[i+1])
-    print(d)
     return d
 
 def increase(a,li):
     if li[-3]=='i':
         a=sorted(a)
-    print(a)
     return a
 
 def decrease(a,li):
@@ -17,7 +15,6 @@ def decrease(a,li):
         for i in range(len(a)):
             if a[i]<a[i+1]:
                 a[i],a[i+1]=a[i+1],a[i]
-    print(a)
     return a
 
 def search(b,li):
