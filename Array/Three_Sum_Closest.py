@@ -6,10 +6,18 @@ def three_sum_closest(t, li):
             sum = sum+li[j]
             for k in range(j+1, len(li)):
                 sum = sum+li[k]
-                if sum-t <= min:
-                    value = sum
-                    min = sum-t
-    print(value)
+                if sum == t:
+                    min = sum
+                    break
+                elif sum < t:
+                    a = -(sum-t)
+                    if a < min:
+                        min = a
+                elif sum > t:
+                    b = sum-t
+                    if b < min:
+                        min = b
+    print(min)
 
 
 n = int(input())
