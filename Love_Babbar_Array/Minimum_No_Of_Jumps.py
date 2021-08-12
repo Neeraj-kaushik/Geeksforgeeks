@@ -6,12 +6,10 @@ def min_jumps(li):
         max1 = max(max1, i+li[i])
         if max1 >= len(li):
             steps += 1
-            print('jump of max')
             return steps
         if i == curr_pos:
-            curr_pos = max
+            curr_pos = max1
             steps += 1
-            print('jump of halt')
     if curr_pos >= len(li):
         return steps
     return -1
