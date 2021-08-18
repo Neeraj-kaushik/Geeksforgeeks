@@ -18,6 +18,6 @@ def triplet_sum(x, li):
 x = int(input())
 li = [int(x) for x in input().split()]
 if(triplet_sum(x, li)):
-    print("1")
+    print(1)
 else:
-    print("0")
+    print(0)
